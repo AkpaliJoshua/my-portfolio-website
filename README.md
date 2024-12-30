@@ -1,2 +1,115 @@
 # my-portfolio-website
 My Personal Portfolio Website
+import React from 'react';
+import { Github, Mail, Linkedin, ExternalLink } from 'lucide-react';
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <header className="bg-white shadow-sm">
+        <div className="max-w-4xl mx-auto px-4 py-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Joshua Akpali</h1>
+          <p className="text-xl text-gray-600 mb-6">Aspiring Web Developer</p>
+          <div className="flex space-x-4">
+            <a href="#" className="text-gray-600 hover:text-gray-900">
+              <Github className="w-6 h-6" />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">
+              <Mail className="w-6 h-6" />
+            </a>
+            <a href="#" className="text-gray-600 hover:text-gray-900">
+              <Linkedin className="w-6 h-6" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      {/* Projects Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-8">Featured Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Weather Dashboard */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Weather Dashboard</h3>
+              <p className="text-gray-600 mb-4">
+                A real-time weather application built with React and OpenWeather API.
+                Features include 5-day forecast, location search, and responsive design.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">React</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">API</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Tailwind</span>
+              </div>
+            </div>
+
+            {/* Task Manager */}
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-2">Task Manager</h3>
+              <p className="text-gray-600 mb-4">
+                A full-stack task management application with user authentication,
+                task categorization, and progress tracking features.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Python</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">Flask</span>
+                <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded text-sm">SQLite</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section className="bg-white py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-8">Experience</h2>
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-xl font-semibold">Web Development Intern</h3>
+              <p className="text-gray-600">Globacom | Previous Experience</p>
+              <ul className="mt-2 space-y-2 text-gray-600">
+                <li>• Assisted in developing and maintaining web applications</li>
+                <li>• Collaborated with senior developers on various projects</li>
+                <li>• Gained hands-on experience with industry standard tools and practices</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">School Web Development Team Member</h3>
+              <p className="text-gray-600">Current Role</p>
+              <ul className="mt-2 space-y-2 text-gray-600">
+                <li>• Contribute to team projects using Python, Java, and JavaScript</li>
+                <li>• Developed multiple interactive web applications</li>
+                <li>• Collaborate with team members on project planning and execution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-8">Technical Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-semibold mb-2">Languages</h3>
+              <p className="text-gray-600">Python, Java, JavaScript, HTML, CSS</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-semibold mb-2">Frameworks</h3>
+              <p className="text-gray-600">React, Flask, Bootstrap</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow-md">
+              <h3 className="font-semibold mb-2">Tools</h3>
+              <p className="text-gray-600">Git, VS Code, npm</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Portfolio;
